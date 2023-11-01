@@ -1,0 +1,8 @@
+# Variational Temporal Deconfounder: A Method for Individualized Treatment Effect Estimation in Longitudinal Observational Data 
+
+**Abstract**
+
+Objective: This paper proposes a new approach, Variational Temporal Deconfounder (VTD), for estimating individualized treatment effects (ITE) from longitudinal observational data that addresses the hidden confounding by using proxies (i.e., surrogate variables that serve for unobservable variables).
+Methods: We build VTD by incorporating a variational recurrent autoencoder that learns the latent encodings of hidden confounders from observed proxies and an ITE estimation network that takes learned hidden encodings to predict the probability of receiving treatments and potential outcomes.
+Results: We test VTD on both synthetic and real-world clinical data, and the results from synthetic data experiments show VTD's effectiveness in deconfounding by outperforming existing methods, while results from real-world datasets (MIMIC-III, NACC) suggest that the performance of the VTD model varies depending on assumptions of underlying causal structures and availability of proxies for hidden confounders.
+Conclusion: The VTD offers a unique solution to address the confounding bias without the "unconfoundedness" assumption when estimating the ITE from longitudinal observational data. This is achieved by utilizing observed proxies to learn a latent embedding that reflects the underlying hidden confounders in the observational data. The elimination of the requirement for the "unconfoundedness" assumption makes the VTD more versatile and practical in real-world clinical applications of personalized medicine.
